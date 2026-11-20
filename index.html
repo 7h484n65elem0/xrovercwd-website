@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>X-Rover Car Wash &amp; Detailers | Mobile car wash in Germiston</title>
+<meta name="description" content="Mobile car wash and detailing within 5 km of Germiston CBD. Wash five times, the sixth is free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000000;--panel:#172222;--line:#67ebff;--cyan:#67ebff;--cyan-d:#b80000;--text:#ffffff;--muted:#afb1b1;--ink:#080808;
+--head:"Bricolage Grotesque","Arial Black",system-ui,sans-serif;--body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.6 var(--body)}
+h1,h2,h3{font-family:var(--head);line-height:1.05;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.btn{display:inline-block;padding:.9rem 1.5rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--cyan);cursor:pointer;font:600 1rem var(--body);transition:background .2s,color .2s}
+.btn.primary{background:var(--cyan);color:var(--ink)}
+.btn.primary:hover{background:#fff;border-color:#fff}
+.btn.ghost{background:transparent;color:var(--cyan)}
+.btn.ghost:hover{background:var(--cyan);color:var(--ink)}
+header{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem 0}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font:800 1.15rem var(--head);line-height:1.05}
+.brand small{display:block;font:400 .72rem var(--body);color:var(--muted);letter-spacing:0}
+nav{display:flex;gap:1.5rem;align-items:center}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--cyan)}
+@media(max-width:760px){nav a:not(.btn){display:none}}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;padding:3.5rem 0 5rem}
+@media(max-width:860px){.hero{grid-template-columns:1fr;padding-top:2rem}}
+h1{font-size:clamp(2.8rem,7.5vw,5.6rem);font-weight:800}
+h1 em{font-style:normal;color:var(--cyan)}
+.lead{font-size:1.2rem;color:var(--muted);max-width:34rem;margin:1.4rem 0 2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:28px;padding:2rem}
+.card h3{font-size:1.3rem;margin-bottom:.4rem}
+.stamps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
+.stamp{aspect-ratio:1;border-radius:50%;border:2px dashed var(--line);display:grid;place-items:center;font:800 1.5rem var(--head);color:var(--muted);position:relative}
+.stamp svg{width:58%;fill:var(--ink)}
+.stamp.on{background:var(--cyan);border:2px solid var(--cyan);animation:pop .45s cubic-bezier(.3,1.6,.5,1) both;animation-delay:calc(var(--i)*.35s + .4s)}
+.stamp.free{border:2px solid var(--cyan);color:var(--cyan);font-size:1.7rem;animation:pop .6s cubic-bezier(.3,1.6,.5,1) both;animation-delay:2.4s;box-shadow:0 0 0 0 rgba(0,240,220,.5)}
+@keyframes pop{from{transform:scale(.3);opacity:0}to{transform:scale(1);opacity:1}}
+@media(prefers-reduced-motion:reduce){.stamp.on,.stamp.free{animation:none}html{scroll-behavior:auto}}
+.card p{color:var(--muted);margin:0}
+section{padding:4.5rem 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;margin-bottom:1rem}
+.sub{color:var(--muted);max-width:40rem;margin:0 0 2.5rem}
+.promos{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:1.2rem}
+@media(max-width:860px){.promos{grid-template-columns:1fr}}
+.promo{border-radius:28px;padding:2rem;background:var(--panel);border:1px solid var(--line)}
+.promo.big{background:var(--cyan);color:var(--ink);border-color:var(--cyan)}
+.promo .num{font:800 clamp(3rem,6vw,4.6rem) var(--head);line-height:1;margin-bottom:.6rem}
+.promo.big p{color:#0a3a36}
+.promo h3{font-size:1.4rem;margin-bottom:.5rem}
+.promo p{margin:0;color:var(--muted)}
+.tabs{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1rem}
+.tabs button{background:transparent;color:var(--text);border:1.5px solid var(--line);border-radius:999px;padding:.55rem 1.1rem;font:600 .95rem var(--body);cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--cyan);border-color:var(--cyan);color:var(--ink)}
+.rows{border-top:1px solid var(--line);margin-top:1.2rem}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:1.05rem 0;border-bottom:1px solid var(--line)}
+.row b{font-weight:600}
+.row span{display:block;color:var(--muted);font-size:.92rem}
+.row .p{font:800 1.6rem var(--head);color:var(--cyan);white-space:nowrap}
+.note{color:var(--muted);font-size:.92rem;margin-top:1rem}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+@media(max-width:860px){.plans{grid-template-columns:1fr}}
+.plan .p{font:800 2.4rem var(--head);color:var(--cyan);margin:.4rem 0}
+.plan p{color:var(--muted)}
+.area{display:grid;grid-template-columns:.8fr 1.2fr;gap:3rem;align-items:center}
+@media(max-width:860px){.area{grid-template-columns:1fr}}
+.area svg{width:100%;max-width:380px;margin-inline:auto;display:block}
+ul.list{list-style:none;padding:0;margin:1.5rem 0 0;columns:2;column-gap:2rem}
+@media(max-width:560px){ul.list{columns:1}}
+ul.list li{padding:.5rem 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.book{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+@media(max-width:860px){.book{grid-template-columns:1fr}}
+label{display:block;font-weight:600;font-size:.95rem;margin:1rem 0 .35rem}
+input,select,textarea{width:100%;background:#0a0d0d;color:var(--text);border:1.5px solid var(--line);border-radius:14px;padding:.8rem 1rem;font:400 1rem var(--body)}
+.contact a{display:block;font:800 1.5rem var(--head);text-decoration:none;margin:.2rem 0}
+.contact a:hover{color:var(--cyan)}
+.contact p{color:var(--muted);margin:1.2rem 0 .2rem}
+footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="#top" aria-label="X-Rover Car Wash and Detailers home">
+    <img src="data:image/png;base64,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" width="42" height="42" alt="" style="display:block">
+    <span>X-Rover<small>Car Wash &amp; Detailers</small></span>
+  </a>
+  <nav><a href="#loyalty">Loyalty</a><a href="#prices">Prices</a><a href="#plans">Monthly plans</a><a href="#area">Service area</a><a class="btn primary" href="#book">Book a wash</a></nav>
+</header>
+</div>
+
+<main id="top">
+<div class="wrap hero">
+  <div>
+    <h1>Wash five.<br>The sixth is <em>on us.</em></h1>
+    <p class="lead">X-Rover brings a proper hand wash and detail to your driveway, anywhere within 5 km of Germiston CBD. Every loyal customer gets the next wash free.</p>
+    <div class="cta"><a class="btn primary" href="#book">Book on WhatsApp</a><a class="btn ghost" href="#prices">See prices</a></div>
+  </div>
+  <div class="card" aria-label="Loyalty card example">
+    <h3>Your X-Rover loyalty card</h3>
+    <p>Five washes earn the sixth. No forms, no app, just ask.</p>
+    <div class="stamps" id="stamps"></div>
+    <p>X-Rover: where dirt meets its match.</p>
+  </div>
+</div>
+
+<section id="loyalty"><div class="wrap">
+  <h2>We reward the regulars.</h2>
+  <p class="sub">Keep your car clean with us and the savings stack up. Mention your promo when you book.</p>
+  <div class="promos">
+    <div class="promo big"><div class="num">6th free</div><h3>Loyalty wash</h3><p>Wash your car with us five times and the sixth wash is free. Works for every vehicle and every wash on our list.</p></div>
+    <div class="promo"><div class="num" style="color:var(--cyan)">R20</div><h3>Refer a friend</h3><p>Send a friend our way. You both get R20 off your next wash.</p></div>
+    <div class="promo"><div class="num" style="color:var(--cyan)">15%</div><h3>2 cars or more</h3><p>Book two or more vehicles in one visit and take 15% off the total.</p></div>
+  </div>
+</div></section>
+
+<section id="prices"><div class="wrap">
+  <h2>Clear prices, by vehicle size.</h2>
+  <p class="sub">Pick your vehicle and how you’d like to be washed. Prices are in rand and include all products and equipment.</p>
+  <div class="tabs" id="modeTabs" role="group" aria-label="Service location"></div>
+  <div class="tabs" id="classTabs" role="group" aria-label="Vehicle type"></div>
+  <div class="rows" id="rows"></div>
+  <p class="note">Extra charge may apply for heavy hair, fur, sand or dirt. Prices are a guide and the final quote is confirmed when you book.</p>
+</div></section>
+
+<section id="plans"><div class="wrap">
+  <h2>Monthly plans for always-clean cars.</h2>
+  <p class="sub">Book a regular slot and pay less per wash. Prices shown are for a sedan wash &amp; dry; other vehicles are priced by size.</p>
+  <div class="plans">
+    <div class="card plan"><h3>Weekly</h3><div class="p">R430<small style="font:400 1rem var(--body);color:var(--muted)"> /month</small></div><p>4 washes a month. Saves 10% on every visit.</p></div>
+    <div class="card plan"><h3>Every two weeks</h3><div class="p">R215<small style="font:400 1rem var(--body);color:var(--muted)"> /month</small></div><p>2 washes a month, same time each fortnight.</p></div>
+    <div class="card plan"><h3>Once a month</h3><div class="p">R110<small style="font:400 1rem var(--body);color:var(--muted)"> /month</small></div><p>A monthly reset to keep the shine going.</p></div>
+  </div>
+  <p class="note">Loyalty stamps still count on plan washes.</p>
+</div></section>
+
+<section id="area"><div class="wrap area">
+  <svg viewBox="0 0 300 300" role="img" aria-label="Service area: 5 kilometre radius around Germiston CBD">
+    <circle cx="150" cy="150" r="130" fill="rgba(0,240,220,.07)" stroke="#00f0dc" stroke-width="2" stroke-dasharray="6 6"/>
+    <circle cx="150" cy="150" r="65" fill="none" stroke="#222b2b" stroke-width="2"/>
+    <circle cx="150" cy="150" r="9" fill="#00f0dc"/>
+    <path d="M150 150H280" stroke="#00f0dc" stroke-width="2"/>
+    <text x="214" y="140" fill="#f3f7f7" font-family="Arial" font-size="16" font-weight="700" text-anchor="middle">5 km</text>
+    <text x="150" y="182" fill="#a0adad" font-family="Arial" font-size="14" text-anchor="middle">Germiston CBD</text>
+  </svg>
+  <div>
+    <h2>We come to you, within 5 km of Germiston CBD.</h2>
+    <p class="sub" style="margin-bottom:0">Home, office or complex parking: if it’s inside the circle, we’ll be there. Further out? Message us and we’ll quote the travel. You can also drive in to our wash bay at 7 Mons Road, Delville.</p>
+    <ul class="list"><li>Exterior wash</li><li>Exterior detailing</li><li>Interior detailing</li><li>Window cleaning</li><li>Wheel and tyre cleaning</li><li>Clay bar treatment</li><li>Engine bay cleaning</li><li>Tyre, trim and dash shine</li></ul>
+  </div>
+</div></section>
+
+<section id="book"><div class="wrap book">
+  <div>
+    <h2>Book your wash.</h2>
+    <p class="sub">Fill in the details and we’ll open WhatsApp with your request ready to send.</p>
+    <div class="contact">
+      <p>Call or WhatsApp</p><a href="tel:+27732675875">073 267 5875</a>
+      <p>Email</p><a href="mailto:xrovercwd@gmail.com" style="font-size:1.1rem">xrovercwd@gmail.com</a>
+      <p>Instagram</p><a href="https://instagram.com/xrovercarwash_and_detailers" style="font-size:1.1rem">@xrovercarwash_and_detailers</a>
+      <p>Wash bay</p><span>7 Mons Road, Delville, Germiston, 1401</span>
+    </div>
+  </div>
+  <div class="card">
+    <label for="fName">Your name</label><input id="fName" autocomplete="name">
+    <label for="fMode">Where should we wash?</label><select id="fMode"></select>
+    <label for="fClass">Vehicle</label><select id="fClass"></select>
+    <label for="fSvc">Wash</label><select id="fSvc"></select>
+    <label for="fWhere">Your address or suburb</label><input id="fWhere" autocomplete="street-address">
+    <label for="fWhen">Preferred day and time</label><input id="fWhen" placeholder="e.g. Saturday morning">
+    <p style="margin:1.2rem 0 1rem" id="quote" aria-live="polite"></p>
+    <button class="btn primary" id="send" type="button">Send on WhatsApp</button>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap" style="display:flex;align-items:center;gap:.8rem"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAWoElEQVR42u2de7xcVXXHv2fm3iS8EhJIgsknBEhIizyiUCrPihowAoJCLRZFkA+VQilo+YgVWt7yEASqlo+PKhaoKI9KeBWLD6CABIICKSoSoOEdEl4JIfcxM6t/rLW9++7sc+bM3Hne3P35nM/cO3Nmzjn7t9dav/XYeyciwihqBSCxvwWotOA6FbtWR7aeUQBqYh0OUI58tgnwLmAbYKb9vTkwARgPFIPvVIC1wNvAm8CrwErg/4DngXciA6doIEungZ10qQQ7CQoBnQ78KbAtMAfYDdgZ2BLojYCZt5WBQeBl4DFgCfAM8DSwFFiXAnhlDODagcXruB5gewPyA8AewFxgXMr3YxImKVrBvSYZ97PGAF4M3G3gLw+ALo8BXBuoGKi7A8cCewIbR9SseAAlDboXXw37psFdcw1wG/AjA/t5b6Dk7ejEO19GO8C+BIwD9gP+ziR2ZkSNNhrQPIBXImBj6vsa4EJgoAZwfa1SGCnQnQiwA8hJ7BTgk8AxwHxP/ZZTOradLQb4daZp+jNMQijlW9rfr9WhAToa4IIH7GbA8cCnDVg6GNhYq9jRA5wE/GvwfDFw/wz4R+BP7LzHgLON0NUFcqcA7NvZccBxBu4ugf3tdFBJIXAvAruauxUC5UDfHbgR2Dr4jceBQ81NK9TKzAstAK5Y5TpFb7R/BLjDRvsu3vuFLgTXNzdbGTEkwg8cYfsHA3fQe+5B64fPdlqgo+DdZJqdSTxfdgZwuhEoMohLt7YCsGmGlE8wIMUwSQJVv3e9LldPE8EdD7wfmA08CdwXqFrnynwMuMjsDp7EjqbmXKgsO1rypDkUisFOkWA3yqYDVwELvVF6DfAFe9ASMAk4HzjRAC3nUOeNto+ScT0J7H89LpgDbDnwqP1fZHj8OgH6gF+ZFJeCgdAD/NT6p2YbjIg06ijY61wReViGWsUOEZEz7JwdReRB75yytK8NikifiPTbMVjl/JIdlZy/XxGRVSJyiYhsEemvxF5nisjiyPfvFJHJdl5SKy6NYtFuZM0GbjBG6CTSl4LbgO8CVwKzgnNazWzX2X3cjiYQHCGcYNplC2AqmpyYY8d2Ea1XC8N/GvgX64M+L5Dh7msG8LfWfyXgHuDf0KRH29wkH9zrgT/PAG4lGvTfvE3g+mrz89bZedss4wnbmsuzwEAP04aFFKbsm4O7gHONl+SJWCVVPosN4IYA7C48BbjJQol5gJMWhhNj133CBmJfEDVLIh2XpHgEm6Nx8AXAPvZ71YIxPtCrgUuAr5k2KXoEU4JrS45QbixYNCKAXQdMAH5obLgauJIy6lrJZgvAIuDjVUKHMU2VluSfCHwYOAzY39Q7HjEKn9fvp7uAL1rUqp7Y82bmY5eB31tIdEjiG0CqLvfISqc3R4yeE5Epdv+9IlIMjoIdWcQmsXOKwfvbi8h3ReTlgERWIvfiyOXrInJ48LtZfe/u6YMistQjiA+IyHv9c+sF1z3UiR6z7JbmOvq8nM+aeMAnVc7xP58nIpeJyFtVvAXXd30icnoExDTB2ldE1kV+70UR2cGdW4+Kdjr+Q8DNaEmMdGlw4kY0d9tvrHXA7PJa4C1gFVq6EzNPhRT7GGbDdgX+yTMJlRTb7NT494FT7Lppfm+vhXQXBOq+ZCz/WxZfqNkGO90+G/hvYF4bCVOzSFifde5qtB5rlSULlqBVG8utI6sx3EIQdv0kcI7Zy0okaOITsJvRLNraSHhXzHV7iKGceJhHXopWt6yrBWA3anuBHwBHtNHVaSTpEvKX6Kw2Br4EeBi4xSQ9y43xidO2wFnA0RnS7Pr058Dh9vsFb1CIMfiHzE3zB5Nj7/ca2SvVQ6pO8khVRUZXq3hH2YtapUWu7haRGTmiTInHWxIROVlEVmfwF/fe7SIyNbDJ7vV8D4eSvTobf6zDrFZwdxCRl4Lw44bSQuD77f2LAuJZjbA5gPYUkSczQHZeydUiMj7C6qeIyE2R710pIuPcuXlUtK+2rje10YqMTyWwVdKB9rrHMmFfriGd55OwOWbu9omYO6fW+41MPRC5xgTgU5a1KwF3WqhYagl0OP3/V2h9UR5bNRJQoXsY+SPAQcCKOgahA2sq8D3gowHIPuk61Oy9D3Cu61UD2P3IppbO2qmJ0uv/7hq73u0WoKfDJNgVKiw1hj3S9OpE4GoDsuSlT3uBVywE/GTEbfK1QbTctifHgwhwaovAfRUt17nRHqjcBVI8EvNR9uLSx1iW6S8DzXlWCrgEYEZDnFkS7H5wa+BBtK6oGQENB+4taEXh74IR3on21+/gRkxPcX09CfiMpQtfszj1HSMafRkAu4690Dq+0dLr25iLgTM8G5SWQUk6DNxO0QQ1A+w6cq459JOaqJbPQWt/E8/2hDamQL5pms2U9CTFs2jk9NHQphZGaqZ6Mi5UQcs1JzVJegtmc872OqscUVvV1KDf2YUmS2zaFNERTzFJsanlZkiwY3Zz0JKRmQ0G2P3Wr8y/WxcE50ObdICF3WZ5NjkJpCpvqLER9ta9voXOKlwEPNWxDDAD4FOAKxoMrrvYm+h0z8dSqL+Ya/A1NBvTye114FK71xIdMCc4S0U7/25jo+2NtmkVG0CXGrjFiM0Vk+wbTYKl0zotuN8pwAWm6U5i/cxOR0mwk6bDrYMbmQp0muAhU7lvR6JXLhV2H5p56YZslX//xwD/Tj31y01qaap3YXDzjRrtA+Z2rY7YXTfqz+gicP0+FOA84y6VTnHpChHp3c6ITSP9Tpen/AmazE5SGPP+aF1whe7KMzvtM8tiBs7FSTpRghda9KrcIHLlRvPrRtoS4uWpk9GwXLfOS3KD9tNoTLncCc9SCNRjAvwFjS/DcT7vgymsuQKcgM6iK9PdU0UnAP/sxQ+STgDYsdfNgL0a6E+6gfICOk0kzd/dGZ0fK3T3zEIXedrVuIR0EsCY7Z2V48byui5uoJwLPMf6BWSgKbFz0WLx0VDA5wbxseiSDG2dDhte+KCc7DnxiMUAQ+Wm4VFGZz1cx/ApGX5HHAkc7BGxbm+uT7dAp8e2dTXBREScVE1A01P7ZLgoTsL60LztPRaVGmR4KamgE8AHLKAxGBkgWJBgsbkWo6n81heS49EZgm3xjXs8tbm1uUhp7pF4Ls+pZlNrUVvh0g0VU81z6P7y26znPhPN6b5EG3Lb/noQO6DzU9OYn/NNbzFwe4nPuosNjJhq3gs4ypP88igEuISGME9Dp6u2BWB3wfd6gBRSRiPArz2QynWMaDGf9xvG2kdzc1rpFLSQ/dZWq+oeT2J3qxK9cu+/E7gE9TDMA8z+LrVRPmi/FeZbm708b9KkqJM/+Cum7fZCiwillZLsGN6mVeyvr6J3tpsbpPZlc91D3Q3saySs7AHskxNpEcDNWIMrpt2KQR/QSoAnmdrMQ/+PMub8VXT95BiRqgbwCsZay9wk0OV7HkCnguZtv0fTenehy/y8VYdqbPmIbnOTdgF8sLHjvHYojM48g06ZuBh4g84udd2gmlPRsz1Q8oAcMsHt0ML4wUjEaqy1sTkp3KoOFVLwVO1b6ASstzdAtdsVAE+vExgn8eeZy1Okc+unNmiA6ylsd3b4SbQOaczudjDA4+v0IQG+g65jURiT3s4lWbUG+p1qfglNBSYZ4Ia7kckGLOnh6ndNLwnuCSS5FvXsFgp5JcN+x6Q6IXuC2WgGtkyVpQebBXCtcVh3s652OrZ8gZPqd9uRoPsILQ7O7ZhdwhoMqL+ivZtn1IOub7mV/f8YOsG9afylnmoDR66esxsMpddXx58HvuS5YavRiNmtwC/QOT3lQIt0O9CFYMD2otvtLQAOQRctdRt5PYcW6F3dLJB76uhUdxPPMLR8QSzfezRwefD7E9Gy3IXoMg33o+tTPAI8G/yGVFF3ra7+kCpmJdynYnt0MbLj0EzdJoGQgBZZuPWgb2mGunYA15Nsf5Wh9SQqAbhzgcu8TikGnVRAc8EO7OUG8g/QlWIGM8BtyLTKEapfSdFsG6E10Z9B93qaERkgfvbKrcNxOTrbcmWjJdkBPFDjAwIsi9hvZ5sXovnecIZCEvzvBsZsOw5DU4nHA38gvozfOJOM6bSm7tgVQLxg/KES3Jcb4O8DvolWUobPV4g8u88/tjMVfl2zAF5Xh++8LMP+zsl5k77dda7XfmhJ0CEMzR1215kLfB2d4tLqasU+tLbqFAPbn+E/0eIBuzB8maNCzgEkDC1L2NAB6zrptTqI1isZ9nlNnQEXp8b2RBc6fdRzqTY2VfYR+79EazehHG8a5nV0/pRfdbIHWghRz5wqx7bXNOPGC549rcUfrhgjDiXY/X1fnZ3vl9BsErDS3Uz1l73BWWzR4UqbymZj5zE8ZTqJ+jfyEhus9zfDiyh4dL0W9eCW3U2LcN1r6qzgdUyeY9C+v4r1F0CbbB3drll7bleWSejqdH572JgwDJUfVTtK3iD5HrqCbcNdJQfws9S2u5aknC+evTrOgC7UICm99t2zzAT4ueU37Jrtin75a3Os9KTNbXx1qef35tUKBYsJfLkZ9te3wSvMBkwhX9K/ksG8HQAvAweiU1MOYWg5hiRD8lcA3wZ+xvpL9D2ClgcdSPtm7bkNPX4X8Vm/gpYxHW3aRjL6x2mpGywaONisII8r2ZmOTu3cJifA7wA7oluepqmV8P08Gav+lO/6K81fi5agtnpCVwUtez3OOEvaPYJOA5IqvzWYM7DTEAl+w6RnmxxqysVXB3Kc6/t6/TnuJy0u7e8BuBBd6m9qC6XYeQ0Pec8tKf4yKfwk9qwu2NE0s+OmrgyY2nlfTqpfqcFml2uwL+UcAYe1FgzptEgWxDfYqudZG2pT3M0sruF75TpuUHIceSQpYfjG0608yHmfjXjWhkowwP+aahmfww6XaS+bHSsNqkGCxXOVlpN/hsJYJ3cRwIm5Nc/mVEN5po2OtQ4C2Pl0jwYBkDEJHgUA++zvJ8ao8wQ6pAbSMdbaDLAD6ddoAXs14MpjwHYXwM53K6E1U1SxsWESf6x1AcDu718ytKRRmpROBqaNgdtdADuJ/SkakkuraRY0+b6Q7l+ZboMC2NU3v4OWtKapXwf6YZ6qHpPkLgAYzydeZGw6NtfXSfY+wCcYKugeax3YYns2ODX8Y3S/wtgiZf7cpMPRVGNCbfHaRrUxn7wGCfbf+3EQDIkNghnAf5oku3rlMkORrlYcYzygDglO0FLQ/yI7hegnJRYBtwG/ZSgh3vT7R+vJ+mjQRlJ1XJ9O1iBpO5+5yWTHogVhWdmlcHngd9BylFYUpBfRLdcvQct8/AFaaTKwfl10o2dLNmzgVNtedgo6pWIe1VOIFa/TW90EncD1DbR2yzc3SQM6PwkGTliKlFZqVI/JrDQS6Dy7j34KrYOqkG8l+HaQHmeD30brpr4J/Aat/vDP8bfLkxwS5O+bWAkCPR+yvpmGls1+lZGtKOuuMx7dWqiEzqBomgQ7cjURXRd6Pp297K9fiD6AxtRvRCsxl1HbQm2xNg2dBnooulv39sHnj9hnL1L7LEF3/nx00t5O1teL0JLaN+sdOHl3AD/UOqsZ6zo2WlWHhHA1Ws76PPA4OuviCQPcFeULw9et7AW2tA7fE53AvrV1vP/b4YKjpxkfqAXgHpPWvayP3xV8fhXwNwxfwzNN46z3eTWA/S/fjNY3d8vi3ZLC/gcN9FcM5D6GFnCbgC7MOtn4x6aRAV1m/dkVDugfolNH8zZHZvcA/gOdZVgOXNN+dJ/HxSkDJ/O9PBEoJ8Vnmcs0le5Yft9N1/QL3RKTtC3syKv6xeMfxZRzehmaAlRNgv3lHfY3jjMtIjwJOud4q4ik4pG+SUaE30RXTfjjFNdCzgdM0GqPr9N9yyWFVZg+EUwLnPgkzP+uz2rLDF+m4UXgRzmlVjwCe4OBG2obdw8vEc/RO8H7nBHK++31Bvw9MEQk75GIyEYico9oK8uG1Sr2zIPB+2+IyCIR2d3rp7Q+LNrreBE52/utcsq1REROjvxuwV7/PuVeHxWRqSJCLQC7H93bHqpkN9LtrRwcJe8opzxjn4j8RkSuEJF5gRCk9Z37bFsRudkDspJyPyIi5wR9719jSxH5rZ3nD7qSvR4vIjVlgZwKuR/dLeUyunu3FKkhjj2ITs572mLv96IzQd6oQnbC8OmRwEXo5mOxuIJ/P+cAZ0dyAe73ZptqjwWXKuhqAzWn+RygV6JrURxJm3f2GgG4rnNXWYCkbIx6nYVbV5j//JQB+6IdfYE99bd9jwFbNp/5TLO5SYpguPcGgNPRHcXTtuB1QZ3+SKjYDYLV9QDsLtCPrlXxHvMRu0mS/VTnmWiqcx1DE+rWWeeVMoISabvOOJZdss8mAiejSz7MzHDd3HurgRPNZUpbd9vd/zPoOmUz7L4deeuxa9+hZ+e3wTF7vJuIrPTsSbeQpYqIfDzHMxbtKGTY18TO8T+fLCInGdkJbWN4L+79P4jIgojNTbsmZv8fjtjwU925eQId1cJrn7BA/4Qu8I+dOVmCbmVbioQA89R7+2uJ+JI+F/gY8NfoDqQwfCmltNDqraYRnyW+LGRWfGIGulHKLDMfv7R4fALISAD2IzFfRLduT6okJGohNs0E+FYLv2alFZPIa2zu8lQzVQejm0NPyYh4hVm3tejSD+fbQMkLLlWyV398f6QA+yBfiG5vnod0tZuYrUJ3enuBoS36YgNRUp53Krps0kGWVdrBs6tpEkvAVR5A9xi+O8LCY9JeLZMmQYSMRgHs50kvtoB76AK4iywzhjqf/OnHZknxteim1Cszzt3Y4tHTTBXOR3dte7clI8YFce88KwCtsIjgFdYXhSCUKjVK64iySbWCXAAuMJVd9t4bNEm5DvgCut37R9soza4zn7Ag/goDa2NjvhO9xMPmFreelhGnzgNsxdjxV9BtEMhQyZ9Fixld8eO19T9pfSw6i9khIhdEGOOgiBxhn08QkTMtIiRtioqV62DfWdGttO+IiCwTkf1SIluu7xIRmSQiN0R+53r7LKkSCl3vaCTA/o0mInKCiDwuIqtF5DEROSriAhwkIksj8ddWglxKCVOWgs8qdbpkIiLLRWQLz6VKi1F/KbivktcnpwXn5joapaLT2ibGKl9nePmMb7dnWiryWE9lJYyuUlgBPmiEKi2kmZh7c0AQfnT9caeZtZpKoprViQ6gtWglxVrim1EULfz3OeAItOylSOvLX1tB7HqrkKeicYAk5ZxNvWhV0m6AJWDJaf5m2fv8JuD9RtJeDtyOSpdLb8Vcs7TPi0ZElzG8clO8PnqK4Vv6thXgPP5keI5z/M8woL9lsdmCJ9HdNkXFgbMErQtL82ndc11lz9zrDfxxaGnR93NE2JrmJjVStfvSviNwgoVDp9Xhc7ZTJVcs8D9gdvUesqthnKpeYJxkJ3v/cTR1+It6fOFOA9jXLL7k72ihwOOBbb3zSgzfJLPdqlg8YDFpPAm4Jic47pyN7JlBy3X62x3oaKZE+4RrGvBhk4gDvbhvGHhImgx6WMgXmrqXLN59DVogUQs4eSsnRwXAIVfwH/I9Zqv3RecqT69C4hgB4BLhC2F7HvgfizH/zItW1QNOwvr7WTCaAY49uO9GTTep3ttU+By0xrhZElxCl1J+Bt0d5udoms6fPdHTCR5AtwHst2IEaNexW6MJgflmy7ZjqJB9E4szZ7kbjugNoLVYa9CkxFMWv15qwD7H+pUfHbVV3/8Dzfjf9kqPCqYAAAAASUVORK5CYII=" width="32" height="32" alt="" style="display:block"><span>© 2026 X-Rover Car Wash &amp; Detailers, Germiston. Where dirt meets its match.</span></div></footer>
+
+<script>
+var CLASSES=[["sedan","Sedan & small bakkie"],["mini","Mini SUV & small cab"],["suv","Mid/large SUV & double cab"],["van","Van & mini bus"]];
+var SVC=[["Wheel & tyre","Wheels cleaned, tyres dressed"],["Wash & dry","Hand wash and dry"],["Full exterior","Includes tyre and trim shine"],["Exterior wash + vacuum","Exterior wash with interior vacuuming"],["Full wash","Exterior and interior"],["Executive full wash","Includes tyre, trim, mats and dash shine"]];
+var P={sedan:{m:[50,69,89,109,139,159],d:[35,50,69,79,89,109]},mini:{m:[50,69,99,119,149,169],d:[40,50,69,89,99,119]},suv:{m:[69,89,109,129,159,179],d:[50,69,79,99,109,129]},van:{m:[69,89,119,139,169,189],d:[50,79,89,109,129,149]}};
+var MODES=[["m","We come to you"],["d","You come to us"]];
+var mode="m",cls="sedan";
+var $=function(id){return document.getElementById(id)};
+
+(function stamps(){
+  var h="";
+  for(var i=0;i<5;i++)h+='<div class="stamp on" style="--i:'+i+'"><svg viewBox="0 0 48 48" aria-label="Wash '+(i+1)+'"><path d="M10 30l4-10h20l4 10v8H10z"/></svg></div>';
+  h+='<div class="stamp free" role="img" aria-label="Sixth wash free">FREE</div>';
+  $("stamps").innerHTML=h;
+})();
+
+function tabs(el,list,cur,fn){
+  el.innerHTML="";
+  list.forEach(function(x){
+    var b=document.createElement("button");b.type="button";b.textContent=x[1];
+    b.setAttribute("aria-pressed",x[0]===cur);
+    b.onclick=function(){fn(x[0])};el.appendChild(b);
+  });
+}
+function render(){
+  tabs($("modeTabs"),MODES,mode,function(v){mode=v;render()});
+  tabs($("classTabs"),CLASSES,cls,function(v){cls=v;render()});
+  $("rows").innerHTML=SVC.map(function(s,i){
+    return '<div class="row"><div><b>'+s[0]+'</b><span>'+s[1]+'</span></div><div class="p">R'+P[cls][mode][i]+'</div></div>';
+  }).join("");
+  quote();
+}
+function fill(sel,list){sel.innerHTML=list.map(function(x){return '<option value="'+x[0]+'">'+x[1]+'</option>'}).join("")}
+fill($("fMode"),MODES);fill($("fClass"),CLASSES);
+$("fSvc").innerHTML=SVC.map(function(s,i){return '<option value="'+i+'">'+s[0]+'</option>'}).join("");
+function quote(){
+  var m=$("fMode").value,c=$("fClass").value,i=+$("fSvc").value;
+  $("quote").textContent="Estimated price: R"+P[c][m][i]+" (confirmed when we reply)";
+}
+["fMode","fClass","fSvc"].forEach(function(id){$(id).onchange=quote});
+$("send").onclick=function(){
+  var m=$("fMode").value,c=$("fClass").value,i=+$("fSvc").value;
+  var t="Hi X-Rover, I’d like to book a wash.\n"+
+   "Name: "+$("fName").value+"\n"+
+   "Location: "+MODES.filter(function(x){return x[0]===m})[0][1]+($("fWhere").value?" ("+$("fWhere").value+")":"")+"\n"+
+   "Vehicle: "+CLASSES.filter(function(x){return x[0]===c})[0][1]+"\n"+
+   "Wash: "+SVC[i][0]+" (R"+P[c][m][i]+")\n"+
+   "When: "+$("fWhen").value;
+  window.open("https://wa.me/27732675875?text="+encodeURIComponent(t),"_blank","noopener");
+};
+render();
+</script>
+</body>
+</html>
